@@ -5,55 +5,92 @@ import java.io.*;
 import javax.swing.*;
 
 public class StartScreen extends JFrame {
-
+	private String player;
+	private ImageIcon icon;
+	private Image img;
+	
 	public StartScreen() {//게임의 시작화면
 		setTitle("산성비 게임");
 		setSize(800,600);
+		icon = new ImageIcon("img/StartScreen.png");
+		img = icon.getImage();
+		
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setResizable(false);
 		
-		Container contentPane = getContentPane();
-		contentPane.setLayout(null);
+		StartScreenPanel panel = new StartScreenPanel();
+		setContentPane(panel);
 		
-		JButton startBtn = new JButton("게임 시작");
-		startBtn.setSize(100,40);
-		startBtn.setLocation(350,400);
+//		Container contentPane = getContentPane();
+//		contentPane.setLayout(null);
+//		contentPane.add(panel);
 		
-		JTextField playerName = new JTextField(10);
-		playerName.setBounds(350, 450, 200, 40);
-		playerName.setLocation(300, 450);
-		playerName.setVisible(true);
+
 		
-		contentPane.add(playerName);
-		contentPane.add(startBtn);
-	
-		startBtn.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				String player = playerName.getText().trim();
-				if(!player.isEmpty()) {
-					savePlayerName(player);
-				}
-				new SettingScreen();
-				setVisible(false);
-			}
-		});
-	
 		setVisible(true);
 	}
-	
-	  private void savePlayerName(String playerName) {
-	        try (BufferedWriter writer = new BufferedWriter(new FileWriter("playerNames.txt", true))) {
-	            writer.write(playerName);
-	            writer.newLine();  // 이름마다 새로운 줄에 기록
-	        } catch (IOException e) {
-	            e.printStackTrace();
-	            JOptionPane.showMessageDialog(null, "파일 저장 중 오류가 발생했습니다.");
-	        }
-	    }
 
 	public static void main(String[] args) {
 		new StartScreen();
+	}
+	
+	private class StartScreenPanel extends JPanel {
+		public StartScreenPanel() {
+			setLayout(null);
+			
+			JButton startBtn = new JButton("게임 시작");
+			startBtn.setSize(100,40);
+			startBtn.setLocation(240,450);
+			
+			JButton rankBtn = new JButton("랭킹");
+			rankBtn.setSize(100,40);
+			rankBtn.setLocation(350,450);
+			
+			JButton exitBtn = new JButton("종료");
+			exitBtn.setSize(100,40);
+			exitBtn.setLocation(460,450);
+			
+			JTextField playerName = new JTextField(10);
+			playerName.setBounds(350, 450, 200, 40);
+			playerName.setLocation(300, 500);
+			playerName.setVisible(true);
+			
+			add(playerName);
+			add(startBtn);
+			add(rankBtn);
+			add(exitBtn);
+		
+			startBtn.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent e) {
+					player = playerName.getText().trim();
+					new SettingScreen(player);
+					setVisible(false);
+					dispose();
+				}
+			});
+			
+			rankBtn.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent e) {
+					new RankScreen();
+				}
+			});
+			
+			exitBtn.addActionListener(new ActionListener() {
+				@Override
+				public void actionPerformed(ActionEvent e) {
+					dispose();
+				}
+			});
+		}
+		
+		@Override
+		public void paintComponent(Graphics g) {
+			super.paintComponent(g);
+			g.drawImage(img, 0, 0, this.getWidth(), this.getHeight(), null);
+		}
+		
 	}
 
 }

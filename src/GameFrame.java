@@ -6,24 +6,22 @@ import java.awt.event.ActionListener;
 public class GameFrame extends JFrame {
 	private int sltLang; //선택 언어
 	private int sltLv; // 선택 난이도
-	
-//	private TextSource textSource = new TextSource(sltLang);
-//	private ScorePanel scorePanel = new ScorePanel();
-//	private EditPanel editPanel = new EditPanel(textSource);
-//	private GamePanel gamePanel = new GamePanel(scorePanel,textSource);
+	private String playerName;
 	
 	private TextSource textSource;
-	private ScorePanel scorePanel = new ScorePanel();
+	private ScorePanel scorePanel;
 	private EditPanel editPanel;
 	private GamePanel gamePanel;
 	
-	public GameFrame(int lang, int level) {
+	public GameFrame(int lang, int level, String player) {
+		playerName = player;
 		sltLang = lang;
 		sltLv = level;
 		
 		textSource = new TextSource(sltLang); // 생성자에서 초기화 -> null참조 방지
         editPanel = new EditPanel(textSource);
-        gamePanel = new GamePanel(scorePanel, textSource, sltLv);
+        scorePanel = new ScorePanel(player);
+        gamePanel = new GamePanel(scorePanel, textSource, sltLv, playerName, editPanel);
         
 		setTitle("게임");  
 		setSize(800,600);
@@ -37,37 +35,58 @@ public class GameFrame extends JFrame {
 	
 	private void makeMenu(){
 		JMenuBar mb = new JMenuBar();
-		this.setJMenuBar(mb);
+		mb.setLayout(new BoxLayout(mb, BoxLayout.X_AXIS));
+	
 		
 		JMenu fileMenu = new JMenu("단어");
+		fileMenu.setMaximumSize(new Dimension(35,50));
 		mb.add(fileMenu);
-		JMenu editMenu = new JMenu("설정");
+		
+		JMenuItem wordList = new JMenuItem("단어목록");
+		wordList.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				textSource.showWords(sltLang);
+			}
+		});
+		
+		JMenuItem wordAdd = new JMenuItem("단어추가");
+		wordAdd.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				textSource.showWordAdd();
+			}
+		});
+		fileMenu.add(wordList);
+		fileMenu.add(wordAdd);
+		
+		mb.add(Box.createHorizontalStrut(-5));
+		
+		JMenuItem editMenu = new JMenuItem("설정");
+		editMenu.setMaximumSize(new Dimension(35,50));
+		editMenu.addActionListener(new ActionListener() {
+			@Override
+			public void actionPerformed(ActionEvent e) {
+				new SettingScreen(playerName);
+				gamePanel.stopGame();
+				dispose();
+			}
+		});
 		mb.add(editMenu);
 		
-		
-		
-		JMenuItem startItem = new JMenuItem("재시작");
-		fileMenu.add(startItem);
-		startItem.addActionListener(new ActionListener() {
-
+		JMenuItem backToStart = new JMenuItem("초기화면");
+		backToStart.setMaximumSize(new Dimension(55,50));
+		backToStart.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				gamePanel.startGame();
-			}
-			
-		});
-		
-		JMenuItem stopItem = new JMenuItem("STOP");
-		fileMenu.add(stopItem);
-		stopItem.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				gamePanel.stopGame();
+				new StartScreen();
+				setVisible(false);
 			}
 		});
+		mb.add(backToStart);
 		
-		JMenuItem exitItem = new JMenuItem("EXIT");
-		fileMenu.add(exitItem);
+		this.setJMenuBar(mb);
+		
 	}
 	
 	private void makeSplit() {
@@ -115,7 +134,8 @@ public class GameFrame extends JFrame {
 		restartBtn.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent e) {
-				new GameFrame(sltLang,sltLv);
+				gamePanel.stopGame();
+				new GameFrame(sltLang,sltLv,playerName);
 				dispose();
 			}
 		});

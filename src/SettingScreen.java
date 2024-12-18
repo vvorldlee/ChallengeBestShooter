@@ -11,8 +11,10 @@ public class SettingScreen extends JFrame { //게임 설정 화면
     private JButton startBtn, endBtn;
     private JComboBox<String> lvBox, lngBox;
     private int sltLang, sltLv;
+    private String playerName;
     
-	public SettingScreen(){
+	public SettingScreen(String player){
+		playerName = player;
 		setTitle("게임 설정");
 		setSize(400,300);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -65,7 +67,7 @@ public class SettingScreen extends JFrame { //게임 설정 화면
 			@Override
 			public void actionPerformed(ActionEvent e) {
 				setVisible(false);
-				GameFrame gameFrame = new GameFrame(sltLang,sltLv);
+				GameFrame gameFrame = new GameFrame(sltLang,sltLv,playerName);
 				gameFrame.setVisible(true);
 			}
 		});

@@ -3,23 +3,41 @@ import java.awt.*;
 import java.awt.event.*;
 
 public class EditPanel extends JPanel {
-	private JTextField tf = new JTextField(10);
-	private TextSource textSource = null;
+	private JLabel activatingItemText = new JLabel("아이템 : ");
+	private JLabel remainTimeText = new JLabel("남은 시간 : ");
+	private JLabel activatingItem = new JLabel("");
+	private JLabel remainTime = new JLabel("");
+	private Font font = new Font("굴림",Font.BOLD,15);
+	
 	public EditPanel(TextSource textSource) {
-		this.textSource = textSource;
 		this.setBackground(Color.CYAN);
-		add(tf);
-		JButton btn = new JButton("추가");
-		add(btn);
+		setLayout(new GridLayout(2,2,10,10));
 		
-		btn.addActionListener(new ActionListener() {
-			@Override
-			public void actionPerformed(ActionEvent e) {
-				String word = tf.getText();
-				if(word.length() == 0)
-					return;
-				textSource.add(word);
-			}
-		});
+		this.add(activatingItemText);
+		this.add(activatingItem);
+		this.add(remainTimeText);
+		this.add(remainTime);
+		setFont();
+		centerAligned();
+	
+	}
+	
+	public void setFont() {
+		activatingItemText.setFont(font);
+		activatingItem.setFont(font);
+		remainTimeText.setFont(font);
+		remainTime.setFont(font);
+	}
+	
+	public void centerAligned() {
+		activatingItemText.setHorizontalAlignment(SwingConstants.CENTER);
+		activatingItem.setHorizontalAlignment(SwingConstants.CENTER);
+		remainTimeText.setHorizontalAlignment(SwingConstants.CENTER);
+		remainTime.setHorizontalAlignment(SwingConstants.CENTER);
+	}
+	
+	public void itemStatus(String item, int time) {
+		activatingItem.setText(item);
+		remainTime.setText(time + "s");
 	}
 }
