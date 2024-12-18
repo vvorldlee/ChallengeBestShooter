@@ -15,7 +15,7 @@
 
 ### 2.프로그램 구조
 
-![프로그램 구조](https://github.com/vvorldlee/ChallengeBestShooter/tree/master/README_img/프로그램 구조.png?raw=true)
+![프로그램 구조](https://github.com/vvorldlee/ChallengeBestShooter/blob/master/README_img/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%A8%20%EA%B5%AC%EC%A1%B0.png)
 
 
 
@@ -23,23 +23,23 @@
 
 - 시작 화면
 
-  ![시작화면](https://github.com/vvorldlee/ChallengeBestShooter/tree/master/README_img\시작화면.png?raw=true)
+  ![시작화면](https://github.com/vvorldlee/ChallengeBestShooter/blob/master/README_img/%EC%8B%9C%EC%9E%91%ED%99%94%EB%A9%B4.png)
 
 - 랭킹 버튼 클릭하면 나오는 랭킹 화면
 
-  ![랭킹화면](https://github.com/vvorldlee/ChallengeBestShooter/tree/master/README_img\랭킹화면.png?raw=true)
+  ![랭킹화면](https://github.com/vvorldlee/ChallengeBestShooter/blob/master/README_img/%EB%9E%AD%ED%82%B9%ED%99%94%EB%A9%B4.png)
 
 - 게임 시작 시 나오는 설정 화면
 
-  ![설정화면1](https://github.com/vvorldlee/ChallengeBestShooter/tree/master/README_img\설정화면1.png?raw=true)
+  ![설정화면1](https://github.com/vvorldlee/ChallengeBestShooter/blob/master/README_img/%EC%84%A4%EC%A0%95%ED%99%94%EB%A9%B41.png)
 
-  ![설정화면2](https://github.com/vvorldlee/ChallengeBestShooter/tree/master/README_img\설정화면2.png?raw=true)
+  ![설정화면2](https://github.com/vvorldlee/ChallengeBestShooter/blob/master/README_img/%EC%84%A4%EC%A0%95%ED%99%94%EB%A9%B42.png)
 
 - 게임 시작
 
-  ![게임화면1](https://github.com/vvorldlee/ChallengeBestShooter/tree/master/README_img\게임화면1.png?raw=true)
+  ![게임화면1](https://github.com/vvorldlee/ChallengeBestShooter/blob/master/README_img/%EA%B2%8C%EC%9E%84%EC%A2%85%EB%A3%8C2.png)
 
-  ![게임화면2](https://github.com/vvorldlee/ChallengeBestShooter/tree/master/README_img\게임화면2.png?raw=true)
+  ![게임화면2](https://github.com/vvorldlee/ChallengeBestShooter/blob/master/README_img/%EA%B2%8C%EC%9E%84%ED%99%94%EB%A9%B42.png)
 
   `
 
@@ -49,11 +49,11 @@
 
   
 
-  ![게임종료2](https://github.com/vvorldlee/ChallengeBestShooter/tree/master/README_img\게임종료2.png?raw=true)
+  ![게임종료2](https://github.com/vvorldlee/ChallengeBestShooter/blob/master/README_img/%EA%B2%8C%EC%9E%84%EC%A2%85%EB%A3%8C2.png)
 
 - 랭킹 저장
 
-  ![랭킹저장](https://github.com/vvorldlee/ChallengeBestShooter/tree/master/README_img\랭킹저장.png?raw=true)
+  ![랭킹저장](https://github.com/vvorldlee/ChallengeBestShooter/blob/master/README_img/%EB%9E%AD%ED%82%B9%EC%A0%80%EC%9E%A5.png)
 
   
 
