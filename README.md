@@ -45,7 +45,7 @@
 
 - 게임 종료
 
-  ![게임종료1](https://github.com/vvorldlee/ChallengeBestShooter/tree/master/README_img\게임종료1.png?raw=true)
+  ![게임종료1](https://github.com/vvorldlee/ChallengeBestShooter/blob/master/README_img/%EA%B2%8C%EC%9E%84%EC%A2%85%EB%A3%8C1.png)
 
   
 
