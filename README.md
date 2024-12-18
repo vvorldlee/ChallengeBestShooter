@@ -15,7 +15,7 @@
 
 ### 2.프로그램 구조
 
-![프로그램 구조](https://github.com/vvorldlee/ChallengeBestShooter/tree/master/README_img/프로그램 구조.png)
+![프로그램 구조](https://github.com/vvorldlee/ChallengeBestShooter/tree/master/README_img/프로그램 구조.png?raw=true)
 
 
 
@@ -23,37 +23,37 @@
 
 - 시작 화면
 
-  ![시작화면](https://github.com/vvorldlee/ChallengeBestShooter/tree/master/README_img\시작화면.png)
+  ![시작화면](https://github.com/vvorldlee/ChallengeBestShooter/tree/master/README_img\시작화면.png?raw=true)
 
 - 랭킹 버튼 클릭하면 나오는 랭킹 화면
 
-  ![랭킹화면](https://github.com/vvorldlee/ChallengeBestShooter/tree/master/README_img\랭킹화면.png)
+  ![랭킹화면](https://github.com/vvorldlee/ChallengeBestShooter/tree/master/README_img\랭킹화면.png?raw=true)
 
 - 게임 시작 시 나오는 설정 화면
 
-  ![설정화면1](https://github.com/vvorldlee/ChallengeBestShooter/tree/master/README_img\설정화면1.png)
+  ![설정화면1](https://github.com/vvorldlee/ChallengeBestShooter/tree/master/README_img\설정화면1.png?raw=true)
 
-  ![설정화면2](https://github.com/vvorldlee/ChallengeBestShooter/tree/master/README_img\설정화면2.png)
+  ![설정화면2](https://github.com/vvorldlee/ChallengeBestShooter/tree/master/README_img\설정화면2.png?raw=true)
 
 - 게임 시작
 
-  ![게임화면1](https://github.com/vvorldlee/ChallengeBestShooter/tree/master/README_img\게임화면1.png)
+  ![게임화면1](https://github.com/vvorldlee/ChallengeBestShooter/tree/master/README_img\게임화면1.png?raw=true)
 
-  ![게임화면2](https://github.com/vvorldlee/ChallengeBestShooter/tree/master/README_img\게임화면2.png)
+  ![게임화면2](https://github.com/vvorldlee/ChallengeBestShooter/tree/master/README_img\게임화면2.png?raw=true)
 
   `
 
 - 게임 종료
 
-  ![게임종료1](https://github.com/vvorldlee/ChallengeBestShooter/tree/master/README_img\게임종료1.png)
+  ![게임종료1](https://github.com/vvorldlee/ChallengeBestShooter/tree/master/README_img\게임종료1.png?raw=true)
 
   
 
-  ![게임종료2](https://github.com/vvorldlee/ChallengeBestShooter/tree/master/README_img\게임종료2.png)
+  ![게임종료2](https://github.com/vvorldlee/ChallengeBestShooter/tree/master/README_img\게임종료2.png?raw=true)
 
 - 랭킹 저장
 
-  ![랭킹저장](https://github.com/vvorldlee/ChallengeBestShooter/tree/master/README_img\랭킹저장.png)
+  ![랭킹저장](https://github.com/vvorldlee/ChallengeBestShooter/tree/master/README_img\랭킹저장.png?raw=true)
 
   
 
