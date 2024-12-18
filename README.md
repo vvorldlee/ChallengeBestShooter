@@ -13,37 +13,47 @@
 
 ​	게임패널 하단의 회색 선에 단어가 닿으면 목숨이 하나 줄어들고 3개가 모두 줄어들면 게임이 끝난다. 게임 종료 화면에는 이름과 점수가 출력되고 YES나 NO 버튼으로 랭킹에 등록할지 선택할 수 있다. 버튼을 누르면 초기화면으로 돌아간다.
 
-### 2. 프로그램 실행 과정
+### 2.프로그램 구조
+
+![프로그램 구조](C:\Users\world\Desktop\school\2-2\객체지향언어2\미니 프로젝트\MiniProject\README_img\프로그램 구조.png)
+
+
+
+### 3. 프로그램 실행 과정
 
 - 시작 화면
 
-  ![image-20241218151124227](C:\Users\world\AppData\Roaming\Typora\typora-user-images\image-20241218151124227.png)
+  ![시작화면](C:\Users\world\Desktop\school\2-2\객체지향언어2\미니 프로젝트\MiniProject\README_img\시작화면.png)
 
 - 랭킹 버튼 클릭하면 나오는 랭킹 화면
 
-  ![image-20241218151131319](C:\Users\world\AppData\Roaming\Typora\typora-user-images\image-20241218151131319.png)
+  ![랭킹화면](C:\Users\world\Desktop\school\2-2\객체지향언어2\미니 프로젝트\MiniProject\README_img\랭킹화면.png)
 
 - 게임 시작 시 나오는 설정 화면
 
-  ![image-20241218151139896](C:\Users\world\AppData\Roaming\Typora\typora-user-images\image-20241218151139896.png)
+  ![설정화면1](C:\Users\world\Desktop\school\2-2\객체지향언어2\미니 프로젝트\MiniProject\README_img\설정화면1.png)
 
-  ![image-20241218151145167](C:\Users\world\AppData\Roaming\Typora\typora-user-images\image-20241218151145167.png)
+  ![설정화면2](C:\Users\world\Desktop\school\2-2\객체지향언어2\미니 프로젝트\MiniProject\README_img\설정화면2.png)
 
 - 게임 시작
 
-  ![image-20241218151158813](C:\Users\world\AppData\Roaming\Typora\typora-user-images\image-20241218151158813.png)
+  ![게임화면1](C:\Users\world\Desktop\school\2-2\객체지향언어2\미니 프로젝트\MiniProject\README_img\게임화면1.png)
 
-  ![image-20241218151218228](C:\Users\world\AppData\Roaming\Typora\typora-user-images\image-20241218151218228.png)`
+  ![게임화면2](C:\Users\world\Desktop\school\2-2\객체지향언어2\미니 프로젝트\MiniProject\README_img\게임화면2.png)
+
+  `
 
 - 게임 종료
 
-  ![image-20241218151255788](C:\Users\world\AppData\Roaming\Typora\typora-user-images\image-20241218151255788.png)
+  ![게임종료1](C:\Users\world\Desktop\school\2-2\객체지향언어2\미니 프로젝트\MiniProject\README_img\게임종료1.png)
 
-  ![image-20241218151259333](C:\Users\world\AppData\Roaming\Typora\typora-user-images\image-20241218151259333.png)
+  
+
+  ![게임종료2](C:\Users\world\Desktop\school\2-2\객체지향언어2\미니 프로젝트\MiniProject\README_img\게임종료2.png)
 
 - 랭킹 저장
 
-  ![image-20241218151308226](C:\Users\world\AppData\Roaming\Typora\typora-user-images\image-20241218151308226.png)
+  ![랭킹저장](C:\Users\world\Desktop\school\2-2\객체지향언어2\미니 프로젝트\MiniProject\README_img\랭킹저장.png)
 
   
 
