@@ -37,7 +37,7 @@
 
 - 게임 시작
 
-  ![게임화면1](https://github.com/vvorldlee/ChallengeBestShooter/blob/master/README_img/%EA%B2%8C%EC%9E%84%EC%A2%85%EB%A3%8C2.png)
+  ![게임화면1](https://github.com/vvorldlee/ChallengeBestShooter/blob/master/README_img/%EA%B2%8C%EC%9E%84%ED%99%94%EB%A9%B41.png)
 
   ![게임화면2](https://github.com/vvorldlee/ChallengeBestShooter/blob/master/README_img/%EA%B2%8C%EC%9E%84%ED%99%94%EB%A9%B42.png)
 
